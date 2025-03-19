@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="root">
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a href="" class="nav__link">
+                            Поездки
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="" class="employee__wrapper">
+                Заболоцкий К.О
+            </a>
+        </header>
+        <main class="main">
+            <div class="main__menu">
+                <span class="menu__text">Мои поездки</span>
+                <button class="menu__button" type="button">
+                    <div class="plus__wrapper">
+                        <div class="plus__line"></div>
+                        <div class="plus__line"></div>
+                    </div>
+                    Оформить поездку
+                </button>
+            </div>
+            <form class="filter__wrapper main__filter">
+                <div class="filter__dates-wrapper">
+                    <div class="filter__date-wrapper">
+                        <label for="sinceDate" class="filter__date-label">Период с:</label>
+                        <input type="date" id="sinceDate" class="filter__date-input">
+                        <button type="button" class="filter__date-cross"></button>
+                    </div>
+                    <div class="filter__date-wrapper">
+                        <label for="byDate" class="filter__date-label">по:</label>
+                        <input type="date" id="byDate" class="filter__date-input">
+                    </div>
+                </div>
+                <div class="filter__search-wrapper">
+                    <input type="search" placeholder="Поиск..." class="filter__search">
+                    <button type="button" class="filter__search-icon"></button>
+                </div>
+                <div class="filter__reset-wrapper">
+                    <input type="reset" class="filter__reset" value="Сбросить все">
+                </div>
+                <div class="filter__checkbox-wrapper">
+                    <input type="checkbox" id="filterCheckbox" class="filter__checkbox">
+                    <label for="filterCheckbox" class="filter__checkbox-label">Показать архивные поездки</label>
+                </div>
+            </form>
+            <div class="spinner__wrapper">
+                <div class="spinner"></div>
+            </div>
+            <table class="main__table table">
+                <tbody>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <div class="table__city-wrapper">
+                                <div class="table__cell-text">Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск, Волгоград</div>
+                                <div class="table__city-info" aria-label="Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск, Волгоград"></div>
+                            </div>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">№ поездки</h6>
+                            <span class="table__cell-text table__cell-text--id">000115</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Дата поездки</h6>
+                            <span class="table__cell-text">22.02.2024 - 27.02.2024</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, план</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell table__cell--right-text">
+                            <h6 class="table__cell-title">Сумма, факт</h6>
+                            <span class="table__cell-text">29 400,00</span>
+                        </td>
+                        <td class="table__cell">
+                            <h6 class="table__cell-title">Город</h6>
+                            <span class="table__cell-text">Москва, Ярославль, Ижевск, Владимир</span>
+                        </td>
+                        <td class="table__cell table__cell--status table__cell--center-text">
+                            <div>
+                                <h6 class="table__cell-title">Статус</h6>
+                                <div class="table__cell-text table__cell-status">Документы</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
