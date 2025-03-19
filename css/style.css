@@ -1,4 +1,19 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2"), format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2"), format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
+  --font-family: "Inter", sans-serif;
   --blue: #4094F7;
   --azure: #0e73f6;
   --font-gray: #84919a;
@@ -12,6 +27,7 @@
 }
 
 body {
+  font-family: var(--font-family);
   background-color: #F4FAFF;
 }
 
@@ -345,6 +361,14 @@ body {
   border-radius: 0.38rem;
   padding: 1rem 1rem 1rem 1.5rem;
   background: #fff;
+  border: 0.0625rem solid #F4FAFF;
+  transition: border 1s;
+}
+.table__row:hover {
+  border-color: #9bcffd;
+}
+.table__row:hover .table__cell-text--id {
+  border-color: #fff;
 }
 .table__cell {
   text-align: left;
@@ -382,6 +406,7 @@ body {
   color: #0e73f6;
   padding-bottom: 0.3125rem;
   border-bottom: 0.0625rem solid rgba(64, 148, 247, 0.2);
+  transition: border-color 0.5s;
 }
 .table__cell-status {
   padding: 0.25rem 0.5rem;
@@ -403,9 +428,10 @@ body {
 .table__city-info::before {
   content: attr(aria-label);
   position: absolute;
-  top: -5.3125rem;
+  bottom: 1.2rem;
   left: -0.625rem;
   display: block;
+  width: 13.69rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   background: #303940;
